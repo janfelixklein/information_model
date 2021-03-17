@@ -1,0 +1,930 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2020-04-05T16:42:45.196Z">
+  <NamespaceUris>
+    <Uri>https://agiprobot.de/</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="https://agiprobot.de/" PublicationDate="2020-04-04T00:00:00Z" Version="1.00">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2019-05-01T00:00:00Z" Version="1.05"/>
+    </Model>
+  </Models>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasEncoding">i=38</Alias>
+    <Alias Alias="HasDescription">i=39</Alias>
+  </Aliases>
+  <Extensions>
+    <Extension>
+      <si:Generator Product="SiOME" Edition="Standard" Version="2.0.4"/>
+    </Extension>
+  </Extensions>
+  <UAObject SymbolicName="https___agiprobot_de_" NodeId="ns=1;i=1000" BrowseName="1:https://agiprobot.de/">
+    <DisplayName>https://agiprobot.de/</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1008</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1005</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1003</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1002</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+    </References>
+  </UAObject>
+  <UAVariable DataType="Boolean" NodeId="ns=1;i=1001" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=1000">
+    <DisplayName>IsNamespaceSubset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="DateTime" NodeId="ns=1;i=1002" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=1000">
+    <DisplayName>NamespacePublicationDate</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:DateTime>2020-04-04T00:00:00Z</uax:DateTime>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="String" NodeId="ns=1;i=1003" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=1000">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:String>https://agiprobot.de/</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="String" NodeId="ns=1;i=1004" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=1000">
+    <DisplayName>NamespaceVersion</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:String>1.00</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="i=256" ValueRank="1" NodeId="ns=1;i=1005" ArrayDimensions="0" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=1000">
+    <DisplayName>StaticNodeIdTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="i=291" ValueRank="1" NodeId="ns=1;i=1006" ArrayDimensions="0" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=1000">
+    <DisplayName>StaticNumericNodeIdRange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="String" NodeId="ns=1;i=1007" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=1000">
+    <DisplayName>StaticStringNodeIdPattern</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="i=96" ValueRank="1" NodeId="ns=1;i=1008" ArrayDimensions="0" BrowseName="DefaultRolePermissions">
+    <DisplayName>DefaultRolePermissions</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UADataType IsAbstract="true" NodeId="ns=1;i=1009" BrowseName="1:GeometryDataTypes">
+    <DisplayName>GeometryDataTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1016</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1017</Reference>
+    </References>
+    <Definition Name="1:GeometryDataTypes"/>
+  </UADataType>
+  <UAVariable DataType="ByteString" NodeId="ns=1;i=1010" BrowseName="1:TypeDictionary" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>TypeDictionary</DisplayName>
+    <Description>Collects the data type descriptions of https://agiprobot.de</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1034</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1029</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1024</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1019</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1014</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1011</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+    </References>
+    <Value>
+      <uax:ByteString>PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp0bnM9Imh0dHBzOi8vYWdpcHJvYm90LmRlLyIgRGVmYXVsdEJ5dGVPcmRlcj0iTGl0dGxlRW5kaWFuIiB4bWxuczpvcGM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9CaW5hcnlTY2hlbWEvIiB4bWxuczp1YT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLyIgVGFyZ2V0TmFtZXNwYWNlPSJodHRwczovL2FnaXByb2JvdC5kZS8iPgogICAgPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvIi8+CiAgICA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9IlBhdGhFeGVjdXRpb25TdGF0dXNEYXRhVHlwZSI+CiAgICAgICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU5fRVhFQ1VUSU9OIiBWYWx1ZT0iMCIvPgogICAgICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik5PX1BMQU4iIFZhbHVlPSIxIi8+CiAgICAgICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTk9UX1BPU1NJQkxFIiBWYWx1ZT0iMiIvPgogICAgICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkRFVklBVEVEX0ZST01fUExBTiIgVmFsdWU9IjMiLz4KICAgICAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTl9SRVNUUklDVEVEX0FSRUEiIFZhbHVlPSI0Ii8+CiAgICAgICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQkFEX0xPQ0FMSVpBVElPTiIgVmFsdWU9IjUiLz4KICAgICAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTVUNDRVNTIiBWYWx1ZT0iNiIvPgogICAgPC9vcGM6RW51bWVyYXRlZFR5cGU+CiAgICA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9IlBhdGhQbGFubmluZ1N0YXR1c0RhdGFUeXBlIj4KICAgICAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJOT1RfRk9VTkQiIFZhbHVlPSIwIi8+CiAgICAgICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTk9UX0ZPVU5EX1NUQVJUX1BPU0VfRVJST1IiIFZhbHVlPSIxIi8+CiAgICAgICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTk9UX0ZPVU5EX0VORF9QT1NFX0VSUk9SIiBWYWx1ZT0iMiIvPgogICAgICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlNVQ0NFU1MiIFZhbHVlPSIzIi8+CiAgICA8L29wYzpFbnVtZXJhdGVkVHlwZT4KICAgIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iR2VvbWV0cnlEYXRhVHlwZXMiLz4KICAgIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InRuczpHZW9tZXRyeURhdGFUeXBlcyIgTmFtZT0iVGhyZWVERGF0YVR5cGVzIi8+CiAgICA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ0bnM6VGhyZWVERGF0YVR5cGVzIiBOYW1lPSJQb2ludERhdGFUeXBlIj4KICAgICAgICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RG91YmxlIiBOYW1lPSJYIi8+CiAgICAgICAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iWSIvPgogICAgICAgIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpEb3VibGUiIE5hbWU9IloiLz4KICAgIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogICAgPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idG5zOlRocmVlRERhdGFUeXBlcyIgTmFtZT0iUG9zZURhdGFUeXBlIj4KICAgICAgICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJ0bnM6UG9pbnREYXRhVHlwZSIgTmFtZT0iUG9zaXRpb24iLz4KICAgICAgICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJ0bnM6UXVhdGVybmlvbkRhdGFUeXBlIiBOYW1lPSJPcmllbnRhdGlvbiIvPgogICAgPC9vcGM6U3RydWN0dXJlZFR5cGU+CiAgICA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ0bnM6VGhyZWVERGF0YVR5cGVzIiBOYW1lPSJRdWF0ZXJuaW9uRGF0YVR5cGUiPgogICAgICAgIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpEb3VibGUiIE5hbWU9IlgiLz4KICAgICAgICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RG91YmxlIiBOYW1lPSJZIi8+CiAgICAgICAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iWiIvPgogICAgICAgIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpEb3VibGUiIE5hbWU9IlciLz4KICAgIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgo8L29wYzpUeXBlRGljdGlvbmFyeT4=</uax:ByteString>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="String" ValueRank="-2" NodeId="ns=1;i=1011" BrowseName="NamespaceUri" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1010</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:String>https://agiprobot.de</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="ByteString" NodeId="ns=1;i=1012" BrowseName="1:TypeDictionary" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>TypeDictionary</DisplayName>
+    <Description>Collects the data type descriptions of https://agiprobot.de</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1035</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1030</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1025</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1020</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1015</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1013</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="String" ValueRank="-2" NodeId="ns=1;i=1013" BrowseName="NamespaceUri" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1012</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:String>https://agiprobot.de/Types.xsd</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="String" NodeId="ns=1;i=1014" BrowseName="1:GeometryDataTypes" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>GeometryDataTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1010</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1016</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+    </References>
+    <Value>
+      <uax:String>GeometryDataTypes</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="String" NodeId="ns=1;i=1015" BrowseName="1:GeometryDataTypes" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>GeometryDataTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1017</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+    </References>
+    <Value>
+      <uax:String>//xs:element[@name='GeometryDataTypes']</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=1016" BrowseName="Default Binary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasDescription">ns=1;i=1014</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1009</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=1017" BrowseName="Default XML">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasDescription">ns=1;i=1015</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1009</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UADataType IsAbstract="true" NodeId="ns=1;i=1018" BrowseName="1:ThreeDDataTypes">
+    <DisplayName>ThreeDDataTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1009</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1021</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1022</Reference>
+    </References>
+    <Definition Name="1:ThreeDDataTypes"/>
+  </UADataType>
+  <UAVariable DataType="String" NodeId="ns=1;i=1019" BrowseName="1:ThreeDDataTypes" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>ThreeDDataTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1010</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1021</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+    </References>
+    <Value>
+      <uax:String>ThreeDDataTypes</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="String" NodeId="ns=1;i=1020" BrowseName="1:ThreeDDataTypes" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>ThreeDDataTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1022</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+    </References>
+    <Value>
+      <uax:String>//xs:element[@name='ThreeDDataTypes']</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=1021" BrowseName="Default Binary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasDescription">ns=1;i=1019</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1018</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=1022" BrowseName="Default XML">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasDescription">ns=1;i=1020</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1018</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UADataType NodeId="ns=1;i=1023" BrowseName="1:PointDataType">
+    <DisplayName>PointDataType</DisplayName>
+    <Description>Represents the position of a point in free space</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1018</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1026</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1027</Reference>
+    </References>
+    <Definition Name="1:PointDataType">
+      <Field DataType="i=11" Name="X"/>
+      <Field DataType="i=11" Name="Y"/>
+      <Field DataType="i=11" Name="Z"/>
+    </Definition>
+  </UADataType>
+  <UAVariable DataType="String" NodeId="ns=1;i=1024" BrowseName="1:PointDataType" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>PointDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1010</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1026</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+    </References>
+    <Value>
+      <uax:String>PointDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="String" NodeId="ns=1;i=1025" BrowseName="1:PointDataType" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>PointDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1027</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+    </References>
+    <Value>
+      <uax:String>//xs:element[@name='PointDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=1026" BrowseName="Default Binary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasDescription">ns=1;i=1024</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1023</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=1027" BrowseName="Default XML">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasDescription">ns=1;i=1025</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1023</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UADataType NodeId="ns=1;i=1028" BrowseName="1:QuaternionDataType">
+    <DisplayName>QuaternionDataType</DisplayName>
+    <Description>Represents an orientation in free space in quaternion form</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1018</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1031</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1032</Reference>
+    </References>
+    <Definition Name="1:QuaternionDataType">
+      <Field DataType="i=11" Name="X"/>
+      <Field DataType="i=11" Name="Y"/>
+      <Field DataType="i=11" Name="Z"/>
+      <Field DataType="i=11" Name="W"/>
+    </Definition>
+  </UADataType>
+  <UAVariable DataType="String" NodeId="ns=1;i=1029" BrowseName="1:QuaternionDataType" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>QuaternionDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1010</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1031</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+    </References>
+    <Value>
+      <uax:String>QuaternionDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="String" NodeId="ns=1;i=1030" BrowseName="1:QuaternionDataType" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>QuaternionDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1032</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+    </References>
+    <Value>
+      <uax:String>//xs:element[@name='QuaternionDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=1031" BrowseName="Default Binary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasDescription">ns=1;i=1029</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1028</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=1032" BrowseName="Default XML">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasDescription">ns=1;i=1030</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1028</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UADataType NodeId="ns=1;i=1033" BrowseName="1:PoseDataType">
+    <DisplayName>PoseDataType</DisplayName>
+    <Description>A representation of pose in free space, composed of position and orientation</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1018</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1036</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1037</Reference>
+    </References>
+    <Definition Name="1:PoseDataType">
+      <Field DataType="ns=1;i=1023" Name="Position">
+        <Description>Representation of the position in free space</Description>
+      </Field>
+      <Field DataType="ns=1;i=1028" Name="Orientation">
+        <Description>Representation of the orientation in free space</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable DataType="String" NodeId="ns=1;i=1034" BrowseName="1:PoseDataType" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>PoseDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1010</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1036</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+    </References>
+    <Value>
+      <uax:String>PoseDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="String" NodeId="ns=1;i=1035" BrowseName="1:PoseDataType" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>PoseDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1037</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+    </References>
+    <Value>
+      <uax:String>//xs:element[@name='PoseDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=1036" BrowseName="Default Binary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasDescription">ns=1;i=1034</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1033</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=1037" BrowseName="Default XML">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasDescription">ns=1;i=1035</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1033</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAVariableType DataType="ns=1;i=1009" NodeId="ns=1;i=1038" BrowseName="1:GeometryDataTypesType">
+    <DisplayName>GeometryVariableTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariableType DataType="ns=1;i=1018" NodeId="ns=1;i=1039" BrowseName="1:ThreeDDataTypesType">
+    <DisplayName>ThreeDVariableTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1038</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariableType DataType="ns=1;i=1023" NodeId="ns=1;i=1040" BrowseName="1:PointVariableType">
+    <DisplayName>PointVariableType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1039</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1043</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1042</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1041</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1041" BrowseName="1:X" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>X</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1040</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1042" BrowseName="1:Y" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>Y</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1040</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1043" BrowseName="1:Z" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>Z</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1040</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType DataType="ns=1;i=1028" NodeId="ns=1;i=1044" BrowseName="1:QuaternionVariableType">
+    <DisplayName>QuaternionVariableType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1039</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1048</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1047</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1046</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1045</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1045" BrowseName="1:X" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>X</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1044</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1046" BrowseName="1:Y" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>Y</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1044</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1047" BrowseName="1:Z" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>Z</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1044</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1048" BrowseName="1:W" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>W</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1044</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType DataType="ns=1;i=1033" NodeId="ns=1;i=1049" BrowseName="1:PoseVariableType">
+    <DisplayName>PoseVariableType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1039</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1051</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1050</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="ns=1;i=1023" NodeId="ns=1;i=1050" BrowseName="1:Position" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>Position</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1049</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1040</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="ns=1;i=1028" NodeId="ns=1;i=1051" BrowseName="1:Orientation" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>Orientation</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1049</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1044</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=1052" BrowseName="1:AssetType">
+    <DisplayName>AssetType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1053" BrowseName="1:RessourceType">
+    <DisplayName>RessourceType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1052</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1054" BrowseName="1:TransportModuleType">
+    <DisplayName>TransportModuleType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1053</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1073</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1070</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1065</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1055</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable DataType="ns=1;i=1033" NodeId="ns=1;i=1055" BrowseName="1:Pose">
+    <DisplayName>Pose</DisplayName>
+    <Description>Current pose of the module</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1054</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1057</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1056</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1049</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="ns=1;i=1028" NodeId="ns=1;i=1056" BrowseName="1:Orientation">
+    <DisplayName>Orientation</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1055</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1061</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1060</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1059</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1058</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1044</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="ns=1;i=1023" NodeId="ns=1;i=1057" BrowseName="1:Position">
+    <DisplayName>Position</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1055</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1064</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1063</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1062</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1040</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1058" BrowseName="1:W">
+    <DisplayName>W</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1056</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1059" BrowseName="1:X">
+    <DisplayName>X</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1056</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1060" BrowseName="1:Y">
+    <DisplayName>Y</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1056</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1061" BrowseName="1:Z">
+    <DisplayName>Z</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1056</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1062" BrowseName="1:X">
+    <DisplayName>X</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1057</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1063" BrowseName="1:Y">
+    <DisplayName>Y</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1057</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable DataType="Double" NodeId="ns=1;i=1064" BrowseName="1:Z">
+    <DisplayName>Z</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1057</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=1065" BrowseName="1:DriveToGoalPose">
+    <DisplayName>DriveToGoalPose</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1054</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1067</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1066</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=1;i=1066" ArrayDimensions="1" BrowseName="InputArguments">
+    <DisplayName>InputArguments</DisplayName>
+    <Description>the definition of the input argument of method 1:TransportModuleType.1:DriveToGoalPose</Description>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1065</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>GoalPose</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=1033</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions/>
+              <uax:Description>
+                <uax:Text>The goal pose including both position and orientation</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=1;i=1067" ArrayDimensions="1" BrowseName="OutputArguments">
+    <DisplayName>OutputArguments</DisplayName>
+    <Description>the definition of the output arguments of method 1:TransportModuleType.1:DriveToGoalPose</Description>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1065</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Success</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions/>
+              <uax:Description>
+                <uax:Text>Returns true if the goal pose was reached successfully</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1068" BrowseName="1:PathExecutionStatusDataType">
+    <DisplayName>PathExecutionStatusDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1069</Reference>
+    </References>
+    <Definition Name="1:PathExecutionStatusDataType">
+      <Field Name="IN_EXECUTION" Value="0"/>
+      <Field Name="NO_PLAN" Value="1"/>
+      <Field Name="NOT_POSSIBLE" Value="2"/>
+      <Field Name="DEVIATED_FROM_PLAN" Value="3"/>
+      <Field Name="IN_RESTRICTED_AREA" Value="4"/>
+      <Field Name="BAD_LOCALIZATION" Value="5"/>
+      <Field Name="SUCCESS" Value="6"/>
+    </Definition>
+  </UADataType>
+  <UAVariable DataType="i=7594" ValueRank="1" NodeId="ns=1;i=1069" ArrayDimensions="7" BrowseName="EnumValues" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1068</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IN_EXECUTION</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NO_PLAN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NOT_POSSIBLE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DEVIATED_FROM_PLAN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IN_RESTRICTED_AREA</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BAD_LOCALIZATION</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SUCCESS</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="ns=1;i=1068" NodeId="ns=1;i=1070" BrowseName="1:PathExecutionStatus">
+    <DisplayName>PathExecutionStatus</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1054</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1071" BrowseName="1:PathPlanningStatusDataType">
+    <DisplayName>PathPlanningStatusDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1072</Reference>
+    </References>
+    <Definition Name="1:PathPlanningStatusDataType">
+      <Field Name="NOT_FOUND" Value="0"/>
+      <Field Name="NOT_FOUND_START_POSE_ERROR" Value="1"/>
+      <Field Name="NOT_FOUND_END_POSE_ERROR" Value="2"/>
+      <Field Name="SUCCESS" Value="3"/>
+    </Definition>
+  </UADataType>
+  <UAVariable DataType="i=7594" ValueRank="1" NodeId="ns=1;i=1072" ArrayDimensions="4" BrowseName="EnumValues" UserAccessLevel="3" AccessLevel="3">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1071</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NOT_FOUND</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NOT_FOUND_START_POSE_ERROR</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NOT_FOUND_END_POSE_ERROR</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SUCCESS</uax:Text>
+              </uax:DisplayName>
+              <uax:Description/>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable DataType="ns=1;i=1071" NodeId="ns=1;i=1073" BrowseName="1:PathPlanningStatus">
+    <DisplayName>PathPlanningStatus</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1054</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+</UANodeSet>
